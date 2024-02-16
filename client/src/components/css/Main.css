@@ -1,0 +1,994 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --primary: #4bbb6b;
+  --secondary: #9dc08b;
+  --ternary: #00bcd4;
+  --white: #fff;
+  --dark: #000;
+  --gray: #999;
+}
+
+/* Header Css */
+
+#Header .navbar {
+  box-shadow: 0px 0px 2px 2px var(--gray);
+}
+
+#Header .container-fluid {
+  background-color: var(--primary);
+  padding: 15px;
+  overflow-x: hidden;
+}
+
+#Header .mainContainer .icon,
+.spanText {
+  padding: 5px;
+  color: var(--white);
+  font-size: 13px;
+}
+
+#Header .navbar-nav .nav-link {
+  color: var(--dark);
+  font-size: 14px;
+  padding-right: 20px;
+  font-weight: normal;
+}
+
+#Header .navbar-nav .nav-link:hover {
+  color: var(--primary);
+  transition: all 0.5s ease-in-out;
+}
+
+#Header .navbar-nav .nav-link::after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary);
+}
+
+#Header .navbar-nav .nav-link:hover::after {
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+}
+
+/* Header Css */
+
+/* -------------------------------------------------------------------------- */
+
+/* Tailor Online Css */
+#Tailor {
+  margin-top: 100px;
+  line-height: 25px;
+  overflow-x: hidden;
+}
+
+#Tailor .tailorImg {
+  text-align: right;
+}
+
+#Tailor .tailorHeading {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+#Tailor .tailorDescription {
+  font-size: 14px;
+  text-align: justify;
+  font-weight: 500;
+}
+
+#Tailor .tailorBtn {
+  padding: 10px 50px;
+  border-radius: 10px;
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: small;
+  box-shadow: 0px 0px 2px 2px var(--secondary);
+  margin: 0px 8px;
+}
+
+#Tailor .tailorBtn:hover {
+  transition: all 0.3s ease-in-out;
+  color: var(--white);
+  background-color: var(--secondary);
+}
+
+@media (max-width: 1280px) {
+  #Tailor {
+    overflow-x: hidden;
+  }
+
+  #Tailor .tailorBtn {
+    width: 100%;
+    margin: 10px 5px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #Tailor {
+    overflow-x: hidden;
+  }
+
+  #Tailor .tailorBtn {
+    width: 100%;
+    margin: 10px 5px;
+  }
+}
+
+@media (max-width: 991px) {
+  #Tailor {
+    overflow-x: hidden;
+  }
+
+  #Tailor .tailorBtn {
+    width: 100%;
+    margin: 8px 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  #Tailor {
+    overflow-x: hidden;
+  }
+
+  #Tailor .tailorBtn {
+    width: 100%;
+    margin: 8px 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  #Tailor {
+    overflow-x: hidden;
+  }
+
+  #Tailor .tailorImg {
+    margin-top: 5px;
+  }
+
+  #Tailor .tailorBtn {
+    width: 100%;
+    margin: 8px 0px;
+  }
+}
+
+/* Tailor Online Css */
+
+/* -------------------------------------------------------------------------- */
+
+/* Gents+Ladies Products Css */
+
+#GLProducts {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  overflow-x: hidden;
+}
+
+#GLProducts .glProductsBtn {
+  padding: 10px 35px;
+  border-radius: 10px;
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: small;
+  box-shadow: 0px 0px 2px 2px var(--secondary);
+  margin: 0px 100px;
+}
+
+#GLProducts .glProductsBtn:hover {
+  transition: all 0.3s ease-in-out;
+  color: var(--white);
+  background-color: var(--secondary);
+}
+
+/* Gents+Ladies Products Css */
+
+/* -------------------------------------------------------------------------- */
+
+/* Working Css */
+#Working {
+  margin-top: 100px;
+  overflow-x: hidden;
+}
+
+#Working .workingDescription {
+  padding: 0 0 30px;
+  line-height: 1.6rem;
+}
+
+#Working .work1,
+.work2,
+.work3,
+.work4 {
+  width: 70%;
+}
+/* Working Css */
+
+/* -------------------------------------------------------------------------- */
+
+/* FeedBack Css */
+#FeedBack {
+  margin-top: 100px;
+  overflow-x: hidden;
+}
+
+#FeedBack .feedbackImg {
+  width: 70%;
+}
+
+#FeedBack .inputField {
+  border: 1px solid green;
+  width: 80%;
+  padding: 8px 0px;
+}
+
+#FeedBack .feedbackBtn {
+  padding: 10px 35px;
+  border-radius: 10px;
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: medium;
+  box-shadow: 0px 0px 2px 2px var(--secondary);
+  width: 80%;
+}
+
+#FeedBack .feedbackBtn:hover {
+  transition: all 0.3s ease-in-out;
+  color: var(--white);
+  background-color: var(--secondary);
+}
+/* FeedBack Css */
+
+/* -------------------------------------------------------------------------- */
+
+/* Gents Item Container Css */
+
+#GentsItemContainer {
+  margin-top: 50px;
+  overflow-x: hidden;
+}
+
+#GentsItemContainer .gentsContainer:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(224, 215, 215);
+}
+
+#GentsItemContainer .pImg {
+  width: 70%;
+  aspect-ratio: 2/3;
+  object-fit: contain; /* Adjust object-fit as needed */
+  padding: 25px 10px;
+}
+
+#GentsItemContainer .pName,
+.pPrice,
+.pOnwards {
+  color: #c3497d;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media (max-width: 991px) {
+  #GentsITemContainer {
+    overflow-x: hidden;
+  }
+
+  #GentsItemContainer .pImg {
+    width: 50%;
+    aspect-ratio: 2/3;
+    object-fit: contain; /* Adjust object-fit as needed */
+  }
+
+  #GentsItemContainer .pName,
+  .pPrice,
+  .pOnwards {
+    color: #c3497d;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 768px) {
+  #GentsITemContainer {
+    overflow-x: hidden;
+  }
+
+  #GentsItemContainer .pImg {
+    width: 50%;
+    aspect-ratio: 2/3;
+    object-fit: contain; /* Adjust object-fit as needed */
+  }
+
+  #GentsItemContainer .pName,
+  .pPrice,
+  .pOnwards {
+    color: #c3497d;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 576px) {
+  #GentsITemContainer {
+    overflow-x: hidden;
+  }
+
+  #GentsItemContainer .pImg {
+    width: 50%;
+    aspect-ratio: 2/3;
+    object-fit: contain; /* Adjust object-fit as needed */
+  }
+
+  #GentsItemContainer .pName,
+  .pPrice,
+  .pOnwards {
+    color: #c3497d;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+/* Gents Item Container Css */
+
+/* -------------------------------------------------------------------------- */
+
+/* Gents Order Details Css */
+#GentsOrderDetails {
+  margin-top: 100px;
+  overflow-x: hidden;
+}
+
+#GentsOrderDetails .container {
+  border: 1px solid black;
+}
+
+#GentsOrderDetails .inputField {
+  border: 1px solid green;
+  width: 100%;
+  padding: 8px 0px;
+}
+
+#GentsOrderDetails .sampleField {
+  border: 1px solid green;
+  width: 100%;
+  padding: 5px 0px;
+}
+
+#GentsOrderDetails .form-control {
+  border: 1px solid green;
+  border-radius: 0px;
+  padding: 8px 0px;
+  color: var(--gray);
+  font-weight: 400;
+}
+
+#GentsOrderDetails .gentsOrderBtn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: medium;
+}
+
+#GentsOrderDetails .gentsOrderBtn:hover {
+  transition: all 0.3s ease-in-out;
+  color: var(--white);
+  background-color: var(--secondary);
+}
+
+/* Gents Order Details Css */
+
+/* -------------------------------------------------------------------------- */
+
+/* Gents CheckOut Css */
+
+#GentsCheckOut {
+  margin-top: 100px;
+  overflow-x: hidden;
+}
+
+#GentsCheckOut .container {
+  border: 2px solid black;
+  padding: 20px 20px;
+}
+
+#GentsCheckOut td {
+  font-weight: 500;
+}
+
+#GentsCheckOut .gentsOrderBtn {
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: medium;
+  width: 50%;
+}
+
+#GentsCheckOut .gentsOrderBtn:hover {
+  transition: all 0.3s ease-in-out;
+  color: var(--white);
+  background-color: var(--secondary);
+}
+
+.alert-container {
+  position: fixed;
+  top: 5px;
+  z-index: 999999;
+}
+
+.alert-content {
+  background-color: var(--white);
+  box-shadow: 0px 0px 2px 5px var(--secondary);
+  color: var(--dark);
+  padding: 30px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid var(--dark);
+  left: 400px;
+}
+
+.alertBtn {
+  padding: 5px 50px;
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.alertBtn:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: var(--secondary);
+  color: var(--dark);
+}
+
+/* @media (max-width: 991px) {
+}
+
+@media (max-width: 768px) {
+} */
+
+/* @media (max-width: 576px) {
+  .custom-alert-container {
+    top: 5px;
+    margin-left: 250px;
+    z-index: 9999;
+  }
+
+  .alert-content {
+    text-align: center;
+    background-color: var(--white);
+    box-shadow: 0px 0px 2px 5px var(--secondary);
+    color: var(--dark);
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid var(--dark);
+  }
+
+  .alertBtn {
+    padding: 5px 50px;
+    background-color: var(--primary);
+    color: var(--white);
+  }
+
+  .alertBtn:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: var(--secondary);
+    color: var(--dark);
+  }
+} */
+
+/* Gents CheckOut Css */
+
+/* -------------------------------------------------------------------------- */
+
+/* Ladies Item Container Css */
+
+#LadiesItemContainer {
+  margin-top: 50px;
+  overflow-x: hidden;
+}
+
+#LadiesItemContainer .ladiesContainer:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(224, 215, 215);
+}
+
+#LadiesItemContainer .pImg {
+  width: 70%;
+  aspect-ratio: 2/3;
+  object-fit: contain; /* Adjust object-fit as needed */
+  padding: 25px 10px;
+}
+
+#LadiesItemContainer .pName,
+.pPrice,
+.pOnwards {
+  color: #c3497d;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media (max-width: 991px) {
+  #LadiesItemContainer {
+    overflow-x: hidden;
+  }
+
+  #LadiesItemContainer .pImg {
+    width: 50%;
+    aspect-ratio: 2/3;
+    object-fit: contain; /* Adjust object-fit as needed */
+  }
+
+  #LadiesItemContainer .pName,
+  .pPrice,
+  .pOnwards {
+    color: #c3497d;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 768px) {
+  #LadiesItemContainer {
+    overflow-x: hidden;
+  }
+
+  #LadiesItemContainer .pImg {
+    width: 50%;
+    aspect-ratio: 2/3;
+    object-fit: contain; /* Adjust object-fit as needed */
+  }
+
+  #LadiesItemContainer .pName,
+  .pPrice,
+  .pOnwards {
+    color: #c3497d;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 576px) {
+  #LadiesItemContainer {
+    overflow-x: hidden;
+  }
+
+  #LadiesItemContainer .pImg {
+    width: 50%;
+    aspect-ratio: 2/3;
+    object-fit: contain; /* Adjust object-fit as needed */
+  }
+
+  #LadiesItemContainer .pName,
+  .pPrice,
+  .pOnwards {
+    color: #c3497d;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+/* Ladies Item Container Css */
+
+/* -------------------------------------------------------------------------- */
+
+/* Ladies Order Details Css */
+#LadiesOrderDetails {
+  margin-top: 100px;
+  overflow-x: hidden;
+}
+
+#LadiesOrderDetails .container {
+  border: 1px solid black;
+}
+
+#LadiesOrderDetails .inputField {
+  border: 1px solid green;
+  width: 100%;
+  padding: 8px 0px;
+}
+
+#LadiesOrderDetails .sampleField {
+  border: 1px solid green;
+  width: 100%;
+  padding: 5px 0px;
+}
+
+#LadiesOrderDetails .form-control {
+  border: 1px solid green;
+  border-radius: 0px;
+  padding: 8px 0px;
+  color: var(--gray);
+  font-weight: 400;
+}
+
+#LadiesOrderDetails .ladiesOrderBtn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: medium;
+}
+
+#LadiesOrderDetails .ladiesOrderBtn:hover {
+  transition: all 0.3s ease-in-out;
+  color: var(--white);
+  background-color: var(--secondary);
+}
+/* Ladies Order Details Css */
+
+/* -------------------------------------------------------------------------- */
+
+/* ladies CheckOut Css */
+
+#LadiesCheckOut {
+  margin-top: 100px;
+  overflow-x: hidden;
+}
+
+#LadiesCheckOut .container {
+  border: 2px solid black;
+  padding: 20px 20px;
+}
+
+#LadiesCheckOut td {
+  font-weight: 500;
+}
+
+#LadiesCheckOut .ladiesOrderBtn {
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: medium;
+  width: 50%;
+}
+
+#LadiesCheckOut .ladiesOrderBtn:hover {
+  transition: all 0.3s ease-in-out;
+  color: var(--white);
+  background-color: var(--secondary);
+}
+
+.custom-alert-container {
+  position: fixed;
+  top: 5px;
+  margin-left: 450px;
+  z-index: 9999;
+}
+
+.alert-content {
+  text-align: center;
+  background-color: var(--white);
+  box-shadow: 0px 0px 2px 5px var(--secondary);
+  color: var(--dark);
+  padding: 30px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid var(--dark);
+}
+
+.alertBtn {
+  padding: 5px 50px;
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.alertBtn:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: var(--secondary);
+  color: var(--dark);
+}
+/* Ladies CheckOut Css */
+
+/* -------------------------------------------------------------------------- */
+
+/* Footer Css */
+
+#Footer {
+  margin-top: 50px;
+}
+
+#Footer .footerHeading {
+  font-size: 1.4rem;
+}
+
+#Footer .footerDescription {
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-align: justify;
+}
+
+#Footer ul li {
+  padding: 5px 0px;
+  list-style: disc;
+}
+
+#Footer ul li a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+#Footer ul li a:hover {
+  transition: all 0.3s ease-in-out;
+  color: var(--primary);
+}
+
+/* Footer Css */
+
+/* -----------------------------------------ADMIN SECTION----------------------------------- */
+/* ----------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------- */
+
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+.h-custom {
+  height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+  .h-custom {
+    height: 100%;
+  }
+}
+
+/* Login Form Css */
+.loginBtn {
+  padding: 6px 20px;
+  border-radius: 10px;
+  background-color: var(--ternary);
+  color: var(--white);
+  font-size: medium;
+  width: 50%;
+}
+/* Login Form Css */
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* Admin Header Css */
+#AdminHeader .navbar-nav .nav-link {
+  color: var(--white);
+  font-size: 16px;
+  padding-right: 20px;
+  font-weight: normal;
+}
+
+#AdminHeader .navbar-nav .nav-link:hover {
+  color: var(--ternary);
+  transition: all 0.5s ease-in-out;
+}
+
+#AdminHeader .navbar-nav .nav-link::after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--ternary);
+}
+
+#AdminHeader .navbar-nav .nav-link:hover::after {
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+}
+/* Admin Header Css */
+
+/* ------------------------------------------------------------------------------------------- */
+
+/* Admin Footer Css */
+#AdminFooter {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/* Admin Footer Css */
+
+/* ------------------------------------------------------------------------------------------- */
+
+/* Gents Orders Css */
+
+#MaleOrders {
+  box-shadow: 0px 0px 2px 2px var(--gray);
+  margin: 50px;
+  overflow-x: hidden;
+}
+
+#MaleOrders .inputField {
+  border: 2px solid var(--gray);
+  width: 40%;
+  padding: 8px 0px;
+}
+
+#MaleOrders .searchBtn {
+  background-color: var(--ternary);
+  color: var(--white);
+  font-size: small;
+  padding: 12px 30px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+#MaleOrders .headingContainer {
+  border: 2px solid var(--gray);
+  box-shadow: 0px 0px 1px 1px var(--gray);
+}
+
+#MaleOrders .titleContainer {
+  background-color: var(--ternary);
+  padding: 2px;
+}
+
+/* Gents Orders Css */
+
+/* ------------------------------------------------------------------------------------------- */
+
+/* Gents Order Info Css */
+
+#GentsOrderInfo {
+  overflow-x: hidden;
+}
+
+#GentsOrderInfo .container {
+  border: 2px solid black;
+  padding: 20px 20px;
+}
+
+#GentsOrderInfo td {
+  font-weight: 500;
+}
+
+/* Gents Order Info Css */
+
+/* ------------------------------------------------------------------------------------------- */
+
+/* Ladies Orders Css */
+
+#LadiesOrders {
+  box-shadow: 0px 0px 2px 2px var(--gray);
+  margin: 50px;
+  overflow-x: hidden;
+}
+
+#LadiesOrders .inputField {
+  border: 2px solid var(--gray);
+  width: 40%;
+  padding: 8px 0px;
+}
+
+#LadiesOrders .searchBtn {
+  background-color: var(--ternary);
+  color: var(--white);
+  font-size: small;
+  padding: 12px 30px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+#LadiesOrders .headingContainer {
+  border: 2px solid var(--gray);
+  box-shadow: 0px 0px 1px 1px var(--gray);
+}
+
+#LadiesOrders .titleContainer {
+  background-color: var(--ternary);
+  padding: 2px;
+}
+
+/* Ladies Orders Css */
+
+/* ------------------------------------------------------------------------------------------- */
+
+/* Ladies Order Info Css */
+
+#LadiesOrdersInfo {
+  overflow-x: hidden;
+}
+
+#LadiesOrdersInfo .container {
+  border: 2px solid black;
+  padding: 20px 20px;
+}
+
+#LadiesOrdersInfo td {
+  font-weight: 500;
+}
+
+/* Ladies Order Info Css */
+
+/* ------------------------------------------------------------------------------------------- */
+
+/* FeedBack Css */
+
+#FeedBacks {
+  box-shadow: 0px 0px 2px 2px var(--gray);
+  margin: 50px;
+  overflow-x: hidden;
+}
+
+#FeedBacks .inputField {
+  border: 2px solid var(--gray);
+  width: 40%;
+  padding: 8px 0px;
+}
+
+#FeedBacks .searchBtn {
+  background-color: var(--ternary);
+  color: var(--white);
+  font-size: small;
+  padding: 12px 30px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+#FeedBacks .headingContainer {
+  border: 2px solid var(--gray);
+  box-shadow: 0px 0px 1px 1px var(--gray);
+}
+
+#FeedBacks .titleContainer {
+  background-color: var(--ternary);
+  padding: 2px;
+}
+
+/* FeedBack Css */
+
+/* ------------------------------------------------------------------------------------------- */
+
+/* Manage Products */
+
+#ManageProducts {
+  box-shadow: 0px 0px 2px 2px var(--gray);
+  margin: 50px;
+  overflow-x: hidden;
+}
+
+#ManageProducts .inputField {
+  border: 2px solid var(--gray);
+  padding: 6px 0px;
+  margin-top: 2px;
+}
+
+#ManageProducts .titleContainer {
+  background-color: var(--ternary);
+  padding: 2px;
+}
+
+#ManageProducts .productField {
+  border: 2px solid var(--gray);
+  padding: 6px 0px;
+}
+
+#ManageProducts .addBtn {
+  background-color: var(--ternary);
+  color: var(--white);
+  font-size: medium;
+  padding: 12px 50px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+/* Manage Products */
+
+/* ------------------------------------------------------------------------------------------- */
