@@ -44,7 +44,7 @@ const ResetPassword = () => {
       };
 
       const ResetPasswordApiUrl =
-        "https://pickandstitches-backend.onrender.com/api/admin/reset-password";
+        "https://pickandstitches-deployment-server.onrender.com/api/admin/reset-password";
       const response = await axios.patch(
         ResetPasswordApiUrl,
         resetPasswordData,

@@ -65,7 +65,7 @@ const FeedBack = () => {
       };
 
       const FeedBackApiUrl =
-        "https://pickandstitches-backend.onrender.com/api/feedback/uploadFeedBack";
+        "https://pickandstitches-deployment-server.onrender.com/api/feedback/uploadFeedBack";
       const response = await axios.post(FeedBackApiUrl, feedbackData, {
         headers: {
           "Content-Type": "application/json",

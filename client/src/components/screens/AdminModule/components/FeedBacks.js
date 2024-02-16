@@ -12,7 +12,7 @@ const FeedBacks = () => {
 
   const getApiData = async () => {
     const url =
-      "https://pickandstitches-backend.onrender.com/api/feedback/getFeedBack?";
+      "https://pickandstitches-deployment-server.onrender.com/api/feedback/getFeedBack?";
 
     try {
       const response = await axios.get(url);
@@ -63,7 +63,7 @@ const FeedBacks = () => {
         setLoading(true);
 
         await axios.delete(
-          `https://pickandstitches-backend.onrender.com/api/feedback/${id}`
+          `https://pickandstitches-deployment-server.onrender.com/api/feedback/${id}`
         );
 
         // Update the data in state after successful deletion
@@ -90,7 +90,7 @@ const FeedBacks = () => {
         await Promise.all(
           selectedItems.map(async (id) => {
             await axios.delete(
-              `https://pickandstitches-backend.onrender.com/api/feedback/${id}`
+              `https://pickandstitches-deployment-server.onrender.com/api/feedback/${id}`
             );
           })
         );

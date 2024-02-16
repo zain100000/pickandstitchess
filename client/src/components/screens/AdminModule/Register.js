@@ -43,7 +43,7 @@ const Register = () => {
       };
 
       const RegisterApiUrl =
-        "https://pickandstitches-backend.onrender.com/api/admin/signup";
+        "https://pickandstitches-deployment-server.onrender.com/api/admin/signup";
       const response = await axios.post(RegisterApiUrl, registerData, {
         headers: {
           "Content-Type": "application/json",

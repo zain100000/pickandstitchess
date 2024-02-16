@@ -148,7 +148,7 @@ const GentsCheckOut = () => {
       orderData.append("time", currentTime);
 
       const orderApiUrl =
-        "https://pickandstitches-backend.onrender.com/api/gents";
+        "https://pickandstitches-deployment-server.onrender.com/api/gents";
       const response = await axios.post(orderApiUrl, orderData, {
         headers: {
           "Content-Type": "multipart/form-data",

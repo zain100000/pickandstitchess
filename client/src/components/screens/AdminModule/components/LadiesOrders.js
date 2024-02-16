@@ -12,7 +12,7 @@ const LadiesOrders = () => {
   const [loading, setLoading] = useState(false);
 
   const getApiData = async () => {
-    const url = "https://pickandstitches-backend.onrender.com/api/ladies?";
+    const url = "https://pickandstitches-deployment-server.onrender.com/api/ladies?";
 
     try {
       const response = await axios.get(url);
@@ -65,7 +65,7 @@ const LadiesOrders = () => {
         setLoading(true);
 
         await axios.delete(
-          `https://pickandstitches-backend.onrender.com/api/ladies/${id}`
+          `https://pickandstitches-deployment-server.onrender.com/api/ladies/${id}`
         );
 
         // Update the data in state after successful deletion
@@ -92,7 +92,7 @@ const LadiesOrders = () => {
         await Promise.all(
           selectedItems.map(async (id) => {
             await axios.delete(
-              `https://pickandstitches-backend.onrender.com/api/ladies/${id}`
+              `https://pickandstitches-deployment-server.onrender.com/api/ladies/${id}`
             );
           })
         );

@@ -44,7 +44,7 @@ const Login = () => {
       };
 
       const LoginApiUrl =
-        "https://pickandstitches-backend.onrender.com/api/admin/login";
+        "https://pickandstitches-deployment-server.onrender.com/api/admin/login";
       const response = await axios.post(LoginApiUrl, loginData, {
         headers: {
           "Content-Type": "application/json",

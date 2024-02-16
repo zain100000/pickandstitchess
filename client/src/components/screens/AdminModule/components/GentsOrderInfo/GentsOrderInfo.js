@@ -18,21 +18,12 @@ const GentsOrderInfo = () => {
         <div className="row pt-5">
           <div className="col-sm-12 col-md-12 col-lg-4">
             <center>
-              {selectedOrder.product_pic ? (
-                <img
-                  src={`http://localhost:5000/api/gents/${selectedOrder._id}/product_pic`}
-                  style={{ width: 200 }}
-                  alt="Product Picture"
-                />
-              ) : (
-                "No Product Picture Attached!"
-              )}
               <h6 className="mt-2">{selectedOrder.product}</h6>
               <div className="imgContainer" style={{ marginTop: 100 }}>
                 <h5>Attached Samples</h5>
                 {selectedOrder.samples ? (
                   <img
-                    src={`http://localhost:5000/api/gents/${selectedOrder._id}/sample`}
+                    src={`https://pickandstitches-deployment-server.onrender.com/api/gents/${selectedOrder._id}/sample`}
                     style={{ width: 200 }}
                     alt="Sample"
                   />

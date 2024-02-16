@@ -23,7 +23,7 @@ const LadiesOrderInfo = () => {
                 <h5>Attached Samples</h5>
                 {selectedOrder.samples ? (
                   <img
-                    src={`http://localhost:5000/api/ladies/${selectedOrder._id}/sample`}
+                    src={`https://pickandstitches-deployment-server.onrender.com/api/ladies/${selectedOrder._id}/sample`}
                     style={{ width: 200 }}
                     alt="Sample"
                   />
